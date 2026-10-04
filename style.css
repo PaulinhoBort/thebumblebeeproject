@@ -1,0 +1,101 @@
+body {
+    /* PASSO 1: Configurações gerais da página */
+
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* PASSO 2: Estilização do título */
+
+h1 {
+    color: hsl(61, 98%, 33%);
+}
+h2 {
+    color: hsl(0, 0%, 0%);
+    font-size: 20px;
+}
+/* PASSO 3: Estilização do parágrafo */
+p {
+    color: #666666;
+    font-size: 18px;
+}
+/* PASSO 5: Estilizamos a caixa principal */
+.container {
+    background-color: white;
+    width: 80%;
+    margin: 50px auto;
+    padding: 30px;
+}
+/* PASSO 6: Estilizamos nosso primeiro botão */
+button {
+    padding: 20px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #333333;
+    color: white;
+    border: 2px dotted;
+    border-radius: 80px;/* arredonda os lados da imagem */
+}
+/* PASSO 7: Estilizamos o cabeçalho */
+header {
+    background-color: #b5b802;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+}
+/* PASSO 10: Posicionamos o rodapé no final */
+footer {
+    margin-top: auto;
+}
+/* PASSO 11: Estilizamos o card do jogo */
+.game-card {
+    background-color: #eeeeee;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;   
+}
+/* PASSO 13: Controlamos o tamanho da imagem do jogo */
+.game-card img {
+    width: 200px;
+    border-radius: 8px; /* arredonda os lados da imagem */
+}
+/* PASSO 16: Transformamos o link em um botão - Tudo que for relacioando a <a> é alterado no botão */
+.game-card a {
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 20px;
+    background-color: #333333;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+/* PASSO 17: Alteramos o botão quando o mouse passa por cima */
+/* PASSO 18: Aumentamos levemente o botão ao passar o mouse */
+.game-card a:hover {
+    background-color: #333333;
+    transform: scale(1.15);
+}
+/* PASSO 22: Organizamos os cards lado a lado */
+/* PASSO 23: Permitimos que os cards quebrem de linha */
+/* PASSO 24: Definimos uma largura para cada card */
+/* PASSO 25: Fazemos o width incluir o padding */
+/* PASSO 27: Configuração dos cards */
+.game-card {
+    background-color: #eeeeee;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+/* PASSO 27: Organização dos cards */
+.games-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;/* PASSO 28: Esta linha centraliza o conteúdo */
+    align-items: center;
+}
